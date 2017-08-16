@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="weeklycalendar.css"
+<html>
+<head>
+<style>
+div {
+  width:300px;
+  margin: auto;
+  border: 1px solid blue;
+}
+</style>
+</head>
+<body>
+  <h2>Weekly Calendar</h2>
+  <div>
+    Monday:
+  </div>
+  <div>
+    Tuesday:
+  </div>
+  <div>
+    Wednesday:
+  </div>
+  <div>
+    Thursday:
+  </div>
+  <div>
+    Friday:
+  </div>
+  <div>
+    Saturday:
+  </div>
+  <div>
+    Sunday:
+  </div>
+</body>
+<head>
+<script>
+function changeText() {
+  x =
+document .getElementById("mySelect");
+  x.options[x.selectedIndex].text="week of 8/21";
+  y.options[y.selectedIndex].text="week of 8/28";
+}
+</script>
+</head>
+<body>
+<form>
+  Select which week you would like to see:
+  <select id="mySelect">
+    <option>week of 8/21</option>
+    <option>week of 8/28</option>
+  </select>
+  <br><br>
+  <input type="button" onClick="changeText()" value="Set text of selected option">
+</form>
+</body>
+</html>
